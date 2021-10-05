@@ -1,0 +1,35 @@
+.btn-group button {
+    background-color: #03f7ff93; /* Orange background */
+    border: 1px solid #03f7ff93; /* Orange border */
+    color: #d6a439; /* White text */
+    padding: 30px 100px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+     /* Set a width if needed */
+     display: inline:block; /* Make the buttons appear below each other */
+    border-radius: 8px;
+    width: 100%;
+    font-size: 20px;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    
+  }
+  .vertical-center {
+    
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: white;
+  }
