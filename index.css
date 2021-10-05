@@ -1,14 +1,15 @@
 .btn-group button {
     background-color: #03f7ff93; /* Orange background */
     border: 1px solid #03f7ff93; /* Orange border */
-    color: #d6a439; /* White text */
+    color: #3c39d6; /* White text */
     padding: 30px 100px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-     /* Set a width if needed */
-     display: inline:block; /* Make the buttons appear below each other */
+     
+     /* Make the buttons appear below each other */
     border-radius: 8px;
-    width: 100%;
+    width: 100%; /* Set a width if needed */
     font-size: 20px;
+    transition: 0.3s;
   }
   .center {
     display: flex;
@@ -33,3 +34,56 @@
   .btn-group button:hover {
     background-color: white;
   }
+
+  .quiz{
+    background-color: coral;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #46b8da;
+    cursor: pointer;
+  }
+
+  #submit{
+    position: fixed;
+    bottom: 25%;
+    left: 10px;
+  }
+  form {
+    margin-left: 10px 50px 20px 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  input,
+  textarea {
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px 8px;
+    margin: 0.25rem 0;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  input[type="submit"]:active {
+    background-color: gray;
+  }
+  
+  form h4 {
+    width: 100%;
+    padding: 0.25rem;
+    margin: 0.5rem 0;
+    color: white;
+    background-color: black;
+  }
+  
