@@ -3,14 +3,27 @@
 <link rel="stylesheet" type="text/css" href="index.css" />
   <script defer type="text/javascript" src="./src/index.js"></script>
 <body>
+  <!-- start Roulette -->
     <div class="center">
     <div class="vertical-center">
     <div class="btn-group">
         <button>Lets Play Roulette!!!!</button>
-        
-       
+        </div>
+    
+   <!--submit quiz-->     
+      <div id="submit">
+        <button class = "quiz">Submit Quiz</button>
       </div>
 
-      <input type="submit" value="Submit Quiz" />
+ <!--Comment form -->
+ <form id="comment">
+  <h4>Comments</h4>
+  <label for="name">Name: </label>
+  <input type="text" name="name" id="new-name" />
+  <label for="new-comment">Comment: </label>
+  <textarea name="new-comment" id="new-comment"></textarea>
+  <input type="submit" value="Create" />
+</form>
+      
 </body>
 </html>
