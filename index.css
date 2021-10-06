@@ -1,0 +1,71 @@
+/* div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  } */
+
+  /* Nav-Menu */
+  .navmenu {
+ overflow: hidden;
+ background-color: tan;
+
+  }
+
+.navmenu a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:red;
+}
+
+.submenu {
+float: left;
+overflow: hidden;
+}
+
+.submenu .submenubtn {
+    font-size: 14px;
+    border: black;
+    outline: none;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.submenu-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.navmenu a:hover, .submenu a:hover, .submenbtn a:hover {
+    background-color:grey;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.submenu-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu-content a:hover {
+    background-color: grey;
+    color: black;
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
