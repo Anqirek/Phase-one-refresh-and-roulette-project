@@ -86,4 +86,13 @@
     color: white;
     background-color: black;
   }
-  
+
+  .question{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+  }
