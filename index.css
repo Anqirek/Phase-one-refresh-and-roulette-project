@@ -1,68 +1,69 @@
+body {
+  background-color: #C9FFE5;
+}
 .btn-group button {
-    background-color: #03f7ff93; /* Orange background */
-    border: 1px solid #03f7ff93; /* Orange border */
-    color: #3c39d6; /* White text */
-    padding: 30px 100px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-     
-     /* Make the buttons appear below each other */
-    border-radius: 8px;
-    width: 100%; /* Set a width if needed */
-    font-size: 20px;
-    transition: 0.3s;
-  }
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    
-  }
-  .vertical-center {
-    
-    position: relative;
-    top: 50%;
-    bottom: 50%;
-    
-  }
-  
-  .btn-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-  }
-  
-  /* Add a background color on hover */
-  .btn-group button:hover {
-    background-color: white;
-  }
-  
-  
-  #submit{
-    position: fixed;
-    bottom: 25%;
-    left: 10px;
-  }
-  
-  input[type="submit"] {
-    color: white;
-    border: 1px solid white;
-    background-color: black;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .question{
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .quiz-container{
-    position: relative;
-    height: 200px;
-    margin-top: 40px;
-  }
-  
-  input[type="radio"].toggle {
-    display: none;
-  }
-  
-  
-  
+  background-color: white; /* Orange background */
+  border: 1px solid #03f7ff93; /* Orange border */
+  color: red; /* White text */
+  padding: 30px 100px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  font-weight: bold;
+  /* Make the buttons appear below each other */
+  border-radius: 8px;
+  width: 100%; /* Set a width if needed */
+  font-size: 20px;
+  transition: 0.3s;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.vertical-center {
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+}
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: yellow;
+}
+.question {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  border: 2px solid;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+label:before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border: 2px dashed #C9FFE5;
+  border-radius: 30%;
+  margin-right: 10px;
+}
+input[type="radio"]:checked + label {
+  background-color: #C9FFE5;
+  color: black;
+}
+input[type="radio"]:checked + label:before {
+  height: 5px;
+  width: 5px;
+  background-color: #C9FFE5;
+  border: 5px solid black;
+}
