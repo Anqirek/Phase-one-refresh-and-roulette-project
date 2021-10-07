@@ -3,6 +3,7 @@ const letsplayBtn = document.getElementById('letsplay')
 const nextButton = document.getElementById("next");
 const trueBtn = document.getElementById("True")
 const falseBtn = document.getElementById('False')
+const submitBtn = document.getElementById('submit')
 const BASE_URL = "https://opentdb.com/api.php?amount=5&type=boolean"
 let currentSlide = 0;
 //const answers = []; // to store the answers
@@ -11,6 +12,25 @@ let total_correct = 0;   // keep track of user's answers
 let newArr;
 let i = 0;
 const output = [];
+
+
+//submit button 
+submitBtn.addEventListener('click', () => {
+    let selected_answer = document.querySelector('input[name="Answer"]:checked').value;
+    if (selected_answer === newArr[i].correct_answer) {
+        total_correct++;
+    }
+   //const submitImage = document.style.backgroundimage('img')
+   document.getElementById('answer-buttons').style = 'display:none'
+    submitBtn.style = 'display:none';
+    document.getElementById('question').innerText = `you have total ${total_correct} correct answers`
+    if(total_correct===5){
+    document.body.style.backgroundImage = "url('https://yaybrigade.com/images/social-image.png')";
+   }
+   else{
+    document.body.style.backgroundImage = "url('https://thumbs.dreamstime.com/b/better-luck-next-time-rubber-stamp-over-white-background-88415080.jpg')";
+   }
+    })
 
 //event listener for next button
 nextButton.addEventListener("click", () => {
@@ -32,7 +52,8 @@ nextButton.addEventListener("click", () => {
         console.log(displayQuestion.question)
         //if this is the last question changing next quetion to submit
         if (i === newArr.length - 1) {
-            document.getElementById('next').innerText = 'Submit' //replacing next question with submit as the text
+            document.getElementById('next').style = 'display:none' 
+            document.getElementById('submit').style = 'display:block'//replacing next question with submit as the text
         }
     }
     else {
