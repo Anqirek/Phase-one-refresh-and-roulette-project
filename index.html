@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <title>Refresh and Roulette!!!</title>
 <link rel="stylesheet" type="text/css" href="index.css" />
-  <script defer type="text/javascript" src="index.js"></script>
+<script defer type="text/javascript" src="index.js"></script>
+
 <body>
   <!-- start Roulette -->
-    <div class="center">
+  <div class="center">
     <div class="vertical-center">
-    <div class="btn-group">
-      <div id = "disappear">
-        <button id = "letsplay" class = "game-start">Lets Play Trivia!!!!</button>
+      <div class="btn-group">
+        <div id="disappear">
+          <button id="letsplay" class="game-start">Lets Play Trivia!!!!</button>
 
         </div>
-  </div>
-  <!--questions and choice-->
-  
-  <div class = "card">
-    <div id = "question card" class = "vertical-center">
-      <div class="center">
-        
-        <div id = "question">Question</div>
-        <div id = "answer-buttons">
-          <button class = "btnT">True</button>
-          <button class = "btnF">False</button>
-          <button id="next">Next Question</button>
+      </div>
+      <!--questions and choice-->
 
-  </div>
+      <div class="card">
+        <div id="question card" class="vertical-center">
+          <div class="center">
 
-    
-       
-  
-     
- 
-      
+            <div id="question" style="display:none">Question </div><br>
+            <div id="answer-buttons" style="display:none">
+              <input type="radio" id="True" name="Answer" value="True">
+              <label for="True">True</label><br>
+              <input type="radio" id="False" name="Answer" value="False">
+              <label for="False">False</label><br>
+            </div>
+            <div id="next" style="display:none">
+              <button id="next">Next Question</button>
+            </div>
 </body>
+
 </html>
