@@ -1,20 +1,19 @@
 body {
   font-family: Georgia, serif;
-font-size: 23px;
-letter-spacing: 0px;
-word-spacing: -0.2px;
-color: #000000;
-font-weight: normal;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
-background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
-background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
-background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
-background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+  font-size: 23px;
+  letter-spacing: 0px;
+  word-spacing: -0.2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+background: -webkit-linear-gradient(70deg, #FFF810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63E89E 60%, #FF7EE3 60%);
+background: -o-linear-gradient(70deg, #FFF810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63E89E 60%, #FF7EE3 60%);
+background: -moz-linear-gradient(70deg, #FFF810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63E89E 60%, #FF7EE3 60%);
+background: linear-gradient(70deg, #FFF810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63E89E 60%, #FF7EE3 60%);
 }
-
 .btn-group button {
   background-color: white; /* white background */
   border: 1px solid#C70039; /* pink border */
@@ -47,54 +46,89 @@ background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-grad
   background-color: #FFC300;
 }
 .question {
-  font-size: 20px;
-  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 input[type="radio"] {
   display: none;
 }
 label {
-  font-size: 14px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  cursor: pointer;
-  border: 2px solid;
-  padding: 5px 10px;
-  display: inline-block;
-  margin: 10px;
-  align-items: center;
+    display: inline-block;
+    background-color: white;
+    padding: 20px 40px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
 }
+
 label:before {
   content: "";
-  height: 10px;
-  width: 10px;
-  border: 1px dashed #C9FFE5;
-  border-radius: 30%;
-  margin-right: 10px;
+  height: 70px;
+  width: 50px;
+  border:10px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 0px;
 }
 input[type="radio"]:checked + label {
-  background-color: #C9FFE5;
+  background-color: #48D1CC;
   color: black;
-  
 }
 input[type="radio"]:checked + label:before {
-  height: 5px;
-  width: 5px;
   background-color: #C9FFE5;
-  border: 5px solid black;
-  
+  border: 4px solid black;
+  width: 5px;
 }
-#next{
-  background-color: #FFC300; /* Green */
-  border: none;
-  color: red;
-  padding: 10px 24px;
-  text-align: center;
-  width: 20%;
-  display: block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 8px;
-    
-  }
-  
+#next {
+  width:70px;
+  height:40px;
+  color:black;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 red;
+  transition: ease-out 0.3s;
+  outline:none
+}
+#next:hover{
+  box-shadow: inset 300px 0 0 0 red;
+  cursor: pointer; 
+  color: black ;
+}
+.card {
+  box-shadow: 10px 10px grey;
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background: white;
+}
+.card label{
+border: none;
+padding-left: 30px 25px;
+}
+input{
+  border:none;
+  appearance: none;
+  background: #F2F2F2;
+  padding: 10px;
+  border-radius: 3px;
+  width:200px;
+  outline:none;
+}
+textarea{
+padding: 5px;
+top: 5rem;
+}
+.card button{
+background:white ;
+border-radius: 10px;
+}
+.card button:hover{
+  box-shadow: inset 300px 0 0 0 red;
+  cursor: pointer; 
+  color: black ;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
