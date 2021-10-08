@@ -9,11 +9,12 @@ text-decoration: none;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-background: -webkit-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
-  background: -o-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
-  background: -moz-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
-  background: linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
 }
+
 .btn-group button {
   background-color: white; /* white background */
   border: 1px solid#C70039; /* pink border */
@@ -46,8 +47,8 @@ background: -webkit-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
   background-color: #FFC300;
 }
 .question {
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 input[type="radio"] {
@@ -96,12 +97,4 @@ input[type="radio"]:checked + label:before {
   border-radius: 8px;
     
   }
-.card {
- box-shadow: 10px 10px grey;
- transition: 0.3s;
-border-radius: 5px; /* 5px rounded corners */
-    }
-    
-    /* Add rounded corners to the top left and the top right corner of the image */
-    
   
