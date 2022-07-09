@@ -16,6 +16,29 @@ fetch(BASE_URL)
         })
         ))
 
+
+// function decodeHTMLEntities(text) {
+
+//  var textArea = document.getElementById('question');
+//  textArea.innerHTML = text;
+
+//   return textArea.value;
+//           }
+
+function decodeEntities(){
+    const htmlEntities = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&apos;"
+      };
+    return str.replace(/([&<>\"'])/g, match => htmlEntities[match]);
+}
+
+  
+  
+    
 function eventListeners(){
     document.getElementById("disappear").style = 'display:none';
     document.getElementById('question').style = 'display:block'

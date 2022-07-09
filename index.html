@@ -1,16 +1,16 @@
 <!DOCTYPE html>
+
 <title>Refresh and Roulette!!!</title>
 <link rel="stylesheet" type="text/css" href="index.css" />
 <script defer type="text/javascript" src="index.js"></script>
 <body>
-  
   <!-- start Roulette -->
   <div class="center">
     <div class="vertical-center">
       <div class="btn-group">
         <div id="disappear">
           <button id="letsplay" class="game-start">Lets Play Trivia!!!!</button>
-
+        
         </div>
       </div>
       <!--questions and choice-->
@@ -18,7 +18,7 @@
         <div id="game" class="justify-center flex-column">
           <div id="hud">
             <div id="hud-item">
-              <h2 id = "questionDisplay" class=" "
+              <h2 id = "questionDisplay" class=" "></h2>
               
               </div>
             </div>
@@ -41,19 +41,19 @@
           
 <div class="card">
 <div id='feedbackform' style="display:none;">
-<p>Send us Feedback! Let us know how we did (please, don't).</p>
+<p>Send us Feedback! Let us know how we did.</p>
 <form action = "https://www.youtube.com/watch?v=iik25wqIuFo" name = "Feedback Form" method="POST">
  <ul>
-<li><label for = "name">Name:</label>
+<li><label id= 'name-label'for = "name">Name:</label>
  <input type ="text" id = "name" name= "user_name">
 </li>
-<li><label for = "cohort">Cohort:</label>
+<li><label id='date-label' for = "Date">Date:</label>
 <input type = "text" id = "cohort" name = "cohort_name">
-</li><label for = "message">Show us Git Lit Love!:</label>
+</li><label id='message-label' for = "message">Show us some Love!:</label>
 <textarea id = "message" name = "message"></textarea>
  <li>
  </li>
- <button type = "submit">Send us your message.sheeesh!</button>
+ <button type = "submit">Send us your message!</button>
 </ul>
 </form>
 </div>
